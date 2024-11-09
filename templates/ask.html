@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <div class="d-flex w-100 justify-content-between align-items-center">
+            <a class="navbar-brand" href="#">HelpMe</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Ask</button>
+          </form>
+          <div class="d-flex gap-1">
+            <img src="test.jpg" alt="Avatar">
+            <div>
+                <div>
+                    Dr. Pepper
+                </div>
+                <a href="#">settings</a>
+                <a href="#">log out</a>
+            </div>
+          </div>
+          </div>
+        </div>
+      </nav>
+
+      <main class="container mt-3 ">
+        <div class="d-flex gap-3 align-items-center">
+          <h1>New Question</h1>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <section>
+              <div class="row mt-5">
+                <div class="col-2">
+                  Title
+                </div>
+                <div class="col-10">
+                  <input type="text" class="form-control" id="exampleFormControlInput1">
+                </div>
+              </div>
+            </section>
+            <section>
+              <div class="row mt-3">
+                <div class="col-2">
+                  Text
+                </div>
+                <div class="col-10">
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+                </div>
+              </div>
+            </section>
+            <section>
+              <div class="row mt-3">
+                <div class="col-2">
+                  Tags
+                </div>
+                <div class="col-10">
+                  <input type="text" class="form-control" id="exampleFormControlInput2">
+                </div>
+              </div>
+            </section>
+            <section>
+              <div class="row mt-3">
+                <div class="col-2"></div>
+                <div class="col-10">
+                  <button type="button" class="btn btn-outline-dark">Ask!</button>  
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="col-4" style="padding-left: 30px">
+            <section class="mb-3">
+              <h2>Popular Tags</h2>
+              <span class="badge text-bg-primary">perl</span>
+              <span class="badge text-bg-secondary">python</span>
+              <span class="badge text-bg-success">Technopark</span>
+              <span class="badge text-bg-danger">MySQL</span>
+              <span class="badge text-bg-warning">django</span>
+              <span class="badge text-bg-info">Mail.ru</span>
+              <span class="badge text-bg-light">Voloshin</span>
+              <span class="badge text-bg-dark">Firefox</span>
+            </section>
+            <section>
+              <h2>Best Members</h2>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><a href="#">Member</a></li>
+                <li class="list-group-item"><a href="#">Member</a></li>
+                <li class="list-group-item"><a href="#">Member</a></li>
+                <li class="list-group-item"><a href="#">Member</a></li>
+                <li class="list-group-item"><a href="#">Member</a></li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </main>
+    <script src="..static/js/bootstrap.min.js"></script>
+</body>
+</html>
