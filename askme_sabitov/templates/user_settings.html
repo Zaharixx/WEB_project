@@ -1,0 +1,58 @@
+{% extends "layouts/base.html" %}
+
+{% block title %}
+<div class="d-flex gap-3 align-items-center">
+  <h1>Settings:</h1>
+  <h1>Dr.Pepper</h1>
+</div>
+{% endblock  %}
+
+{% block content %}
+<section>
+  <div class="row mt-5">
+    <div class="col-2">
+      Login
+    </div>
+    <div class="col-10">
+      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="dr_pepper">
+    </div>
+  </div>
+</section>
+<section>
+  <div class="row mt-3">
+    <div class="col-2">
+      Email
+    </div>
+    <div class="col-10">
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="dr.pepper@mail.ru">
+    </div>
+  </div>
+</section>
+<section>
+  <div class="row mt-3">
+    <div class="col-2">
+      NickName
+    </div>
+    <div class="col-10">
+      <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Dr.Pepper">
+    </div>
+  </div>
+</section>
+<section>
+  <div class="row mt-3">
+    <div class="col-2">
+      Upload avatar
+    </div>
+    <div class="col-10">
+      <div class="mb-3">
+        <img src="../static/img/no-profile-picture-icon.png" alt="Avatar" width="100" height="100">
+      </div>
+      <div class="input-group mb-4">
+        <input type="text" class="form-control" placeholder="Path to image" id="exampleFormControlInput2" style="width: 100px">
+        <button type="button" class="btn btn-secondary">choose</button>
+      </div>
+      <button type="button" class="btn btn-outline-dark">Save</button>
+    </div>
+  </div>
+</section>
+{% endblock  %}

@@ -1,0 +1,16 @@
+{% extends "layouts/base.html" %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+<div class="d-flex flex-column gap-3">
+  {% include "layouts/question_card2.html" with question=item %}
+  {% for answer in answers %}
+    {% include "layouts/answer_card.html" %}
+  {% endfor %}
+</div>
+<textarea class="form-control mt-4" id="exampleFormControlTextarea1" placeholder="Enter your answer here.." rows="5"></textarea>
+<button type="button" class="btn btn-secondary mt-3 mb-3">Answer</button>
+{% include "layouts/pagination.html" %}
+{% endblock  %}

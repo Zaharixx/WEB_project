@@ -1,0 +1,30 @@
+<arictle class="card w-100">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-3">
+          <div class="border mb-2"  style="height: 100px">
+            <img src="jpg.jpg" alt="Avatar" class="img-thubnail">
+          </div>
+            <input class="form-control" type="number" value="5" aria-label="default input example">
+        </div>
+        <div class="col-9">
+          <h5 class="card-title">
+            <a href={% url "question" question.id %}>{{question.title}}</a>
+          </h5>
+          <p class="card-text">{{question.text}}</p>
+          <div class="d-flex gap-4">
+            <a href="#" class="card-link">answer (3)</a>
+            <div class="d-flex gap-2">
+              Tags:
+              <div>
+                <a href="#" class="card-link">Another link</a>
+                <a href="#" class="card-link">Another link</a>
+                <a href="#" class="card-link">Another link</a>
+                <a href="#" class="card-link">Another link</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</arictle>
